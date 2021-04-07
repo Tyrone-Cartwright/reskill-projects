@@ -1,0 +1,20 @@
+.item {
+    border: 1px solid rgba(211, 187, 3, 0.967);
+    background-color: rgb(136, 127, 0);
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    font-size: 30px;
+}
+
+/* CONTAINER */
+#container {
+    width: 95vw;
+    height: 70vh;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    outline: 8px solid #4834D4;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: ;
+}
