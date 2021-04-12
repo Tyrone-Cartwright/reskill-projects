@@ -7,8 +7,6 @@
 body, html {
     margin-top: 100px;
     background-color: hsl(185, 75%, 39%);
-    /* background-image: url(/assets/bg-pattern-top.svg), url(/assets/bg-pattern-bottom.svg);
-    background-repeat: no-repeat;
     background-position: -160px -290px; */
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
@@ -31,21 +29,6 @@ body, html {
     right: -150px;
 
 }
-
-/* , url(/assets/bg-pattern-bottom.svg) */
-
-/* .bg-top {
-    background-image:url('/assets/bg-pattern-top.svg" alt="top circle"');
-    background-repeat:no-repeat;
-    background-position:left top;
-} */
-
-/* .bg-top {
-    position: absolute;
-    top: 0;
-    left: -250px;
-} */
-
 
 #grid-container {
     display: grid;
@@ -135,16 +118,3 @@ body, html {
     text-align: center;
         
 }
-
-/* .bg-top {
-    position: relative;
-    top: 300px;
-    right: 580px;
-}
-
-.bg-bottom {
-    position: relative;
-    top: -150px;
-    left: 520px;
-} */
-
