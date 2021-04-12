@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin-top: 100px;
+    background-color: hsl(185, 75%, 39%);
+    /* background-image: url(/assets/bg-pattern-top.svg), url(/assets/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -160px -290px; */
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.bg-top {
+    position: absolute;
+    background-repeat: no-repeat;    
+    top: -380px;
+    left: -100px;
+}
+
+.bg-bottom {
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: -525px;
+    right: -150px;
+
+}
+
+/* , url(/assets/bg-pattern-bottom.svg) */
+
+/* .bg-top {
+    background-image:url('/assets/bg-pattern-top.svg" alt="top circle"');
+    background-repeat:no-repeat;
+    background-position:left top;
+} */
+
+/* .bg-top {
+    position: absolute;
+    top: 0;
+    left: -250px;
+} */
+
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 1fr 200px;
+    grid-template-areas: 
+    "banner banner banner banner"
+    "crest crest crest crest"
+    "social-attr social-attr social-attr social-attr";
+    justify-content: center;    
+    border-radius: 20px 20px 20px 20px;
+    background-color: #fff;
+    width: 60vh;
+    height: 60vh;
+}
+
+ .banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+    background-image: url(/assets/bg-pattern-card.svg);
+    grid-area: banner;
+    border-radius: 20px 20px 0px 0px;        
+}
+
+.crest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-area: crest;
+}
+
+.user img {
+    border-radius: 50%;        
+    position: relative;
+    top: -60px;
+    left: 40px;
+    width: 120px;
+    height: 120px;   
+}
+
+.crest .user-info {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;    
+}
+
+.crest .user-info span {
+    padding: 10px;
+    color: hsl(0, 0%, 59%);
+}
+
+.crest h4 {
+    margin-top: 10px;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+}
+
+.social-attr {
+    grid-area: social-attr;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+    border-top: 1px solid #bbb;
+}
+
+.followers, .likes, 
+.photos {
+    text-align: center;
+    /* margin-top: 10px; */
+    color: hsl(229, 23%, 23%);
+}
+
+.social-attr h3 {
+    margin-bottom: 10px;
+}
+
+.social-attr p{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    text-align: center;
+        
+}
+
+/* .bg-top {
+    position: relative;
+    top: 300px;
+    right: 580px;
+}
+
+.bg-bottom {
+    position: relative;
+    top: -150px;
+    left: 520px;
+} */
+
