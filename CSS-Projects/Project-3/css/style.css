@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +7,96 @@
 }
 
 body, html {
+    background-color: hsl(210, 46%, 95%);
     font-family: 'Manrope', sans-serif;
-    font-size: 13px;
 }
 
+.wrapper {
+    margin-top: 300px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* border: 1px solid #aaa; */
+    border-radius: 20px 20px 20px 20px;
+    background-color: #fff;
+    box-shadow: 0 8px 10px
+    hsl(212, 23%, 69%);
+    max-width: 900px;
+    height: 321px;
+    margin: auto;
+}
+
+.img-detail {    
+    width: 400px;
+}
+
+.img-detail img {
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.header-content { 
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.header-content h2 {
+    color: hsl(217, 19%, 35%);
+}
+
+.header-content .text {
+    color: hsl(214, 17%, 51%);
+    font-size: 13px;
+    padding-top: 20px;
+    letter-spacing: .41px;
+}
+
+.user-content {
+    display: flex;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+.user .user-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;   
+}
+
+.user .user-info {
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+.user .user-info h4 {
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+
+.user .user-info p {
+    color: hsl(212, 23%, 69%);
+}
+
+.arrow {
+    position: absolute;
+    right: 60px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: 10px 15px;
+
+}
+
+ion-icon {
+    color: hsl(212, 23%, 69%);
+    font-size: 20px;
+  }
